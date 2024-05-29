@@ -1,0 +1,74 @@
+@import 'normalize.css';
+
+/********** STYLE GENERAL *********/
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  background: #fff;
+  color: #3b3d40;
+}
+
+h1 {
+  font-weight: 800;
+  text-align: center;
+  color: #e72854;
+  margin-bottom: 2em;
+}
+
+h1 strong {
+  text-shadow: 0 0.03rem 0.06rem rgba(231, 40, 84, 0.5), 0 0.1rem 0.3rem rgba(231, 40, 84, 0.5);
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #e72854;
+}
+
+a:hover {
+  color: #6bbbda;
+}
+
+strong {
+  color: #6bbbda;
+}
+
+.bouton,
+[type='submit'],
+[type='reset'],
+button {
+  color: white;
+  padding: 1em;
+  background-color: #e72854;
+  border: none;
+  cursor: pointer;
+}
+
+.bouton:hover,
+[type='submit']:hover,
+[type='reset']:hover,
+button:hover {
+  background-color: #6bbbda;
+}
+
+/********** STYLE CONTENU PRINCIPAL *********/
+main {
+  padding: 1rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
