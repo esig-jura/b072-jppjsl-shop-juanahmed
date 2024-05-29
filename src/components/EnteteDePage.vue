@@ -5,7 +5,7 @@ import {RouterLink} from "vue-router";
 
 <template>
   <header>
-    <RouterLink class="actif" to="/">
+    <RouterLink class="logo" to="/">
       <img src="/img/logo-jppjsl.png"
            class="logo"
            alt="Logo de J&#039;peux pas j&#039;ai sabre laser"
@@ -13,9 +13,9 @@ import {RouterLink} from "vue-router";
     </RouterLink>
     <nav>
       <ul>
-        <li><RouterLink class="actif" to="/">Accueil</RouterLink></li>
-        <li><RouterLink class="actif" to="/service-client">Service client</RouterLink></li>
-        <li><RouterLink class="actif" to="/sabre/1">Fiche du sabre 1</RouterLink></li>
+        <li><RouterLink active-class="actif" to="/">Accueil</RouterLink></li>
+        <li><RouterLink active-class="actif" to="/service-client">Service client</RouterLink></li>
+        <li><RouterLink active-class="actif" to="/sabre/:id">Fiche du sabre 1</RouterLink></li>
       </ul>
     </nav>
   </header>
