@@ -73,14 +73,6 @@ main {
     margin: 0 auto;
 }
 
-/********** STYLE FOOTER *********/
-footer {
-    background-color: #27282a;
-    padding: 1rem;
-    color: white;
-    text-align: center;
-}
-
 /********** STYLE PAGE ACCUEIL *********/
 .page-accueil .sabres {
     display: flex;
