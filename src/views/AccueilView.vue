@@ -100,7 +100,7 @@ const tableauSabres = [
 
     <div class="sabres">
       <div v-for="unSabre in tableauSabres" :key="unSabre.id" class="sabre">
-        <RouterLink to="/sabre/:id">
+        <RouterLink :to="'/sabre/' + unSabre.id">
           <figure>
             <img :src="'/img/' + unSabre.image" :alt="unSabre.nom">
             <figcaption>
