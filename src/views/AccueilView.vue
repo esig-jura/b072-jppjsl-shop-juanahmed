@@ -1,5 +1,6 @@
 <script setup>
 import {ref} from "vue";
+import SabreLaser from "@/components/SabreLaser.vue";
 
 const tableauSabres = ref([
   {
@@ -112,18 +113,14 @@ const tableauSabres = ref([
           </figure>
         </RouterLink>
       </div>
-      <div class="sabre rupture">
-        <a href="sabre.html">
-          <figure>
-            <img src="/img/sl-cal.jpg" alt="Sabre laser Cal Kestis">
-            <figcaption>
-              <p>Noooon, les stocks sont vides !</p>
-              <h2>Sabre laser Cal Kestis</h2>
-              <div class="prix">349 CHF</div>
-            </figcaption>
-          </figure>
-        </a>
-      </div>
+      <ul class="sabres">
+        <SabreLaser
+            v-for="unSabre in tableauSabres"
+            :key="unSabre.id"
+            :sabre="unSabre"
+        />
+      </ul>
+
     </div>
   </main>
 </template>
