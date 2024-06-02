@@ -1,14 +1,18 @@
 <script setup>
 
-
-
+const props = defineProps({
+  id: {
+    type: Number,
+    required: true
+  },
+})
 
 </script>
 
 <template>
   <main class="page-sabre">
     <div class="sabre">
-      <h1>Sabre laser Cal Kestis</h1>
+      <h1>{{ id }}</h1>
 
       <img src="/img/sl-cal.jpg" alt="Sabre laser Cal Kestis">
 

@@ -1,5 +1,7 @@
 <script setup>
-const tableauSabres = [
+import {ref} from "vue";
+
+const tableauSabres = ref([
   {
     id: 445,
     nom: 'SL-VAD',
@@ -90,7 +92,7 @@ const tableauSabres = [
         'La SL-PIKE est notre modèle de lance laser de référence ! ' +
         'Idéal pour compléter un cosplay, étudié pour le combat.'
   }
-]
+])
 
 </script>
 
